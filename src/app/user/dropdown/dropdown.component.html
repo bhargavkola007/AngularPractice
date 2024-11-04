@@ -1,0 +1,71 @@
+<label for="dropdown">Choose an option:</label>
+<select id="dropdown" [(ngModel)]="selectedOption">
+  <option *ngFor="let option of options" [value]="option">{{ option }}</option>
+</select>
+
+<p>You selected: {{ selectedOption }}</p>
+
+<div>
+  <label for="username">Username:</label>
+  <input id="username" type="text" [(ngModel)]="username" />
+</div>
+
+<div>
+  <label for="password">Password:</label>
+  <input id="password" type="password" [(ngModel)]="password" />
+</div>
+
+<button *ngIf="count < 3" (click)="handleLogin()" >Login</button>
+<button *ngIf="count >= 2" disabled>Login</button>
+<p>{{ message }}</p><p>{{ attempt }}</p>
+
+<div>
+  <label for="num1">Enter first number:</label>
+  <input id="num1" type="number" [(ngModel)]="number1" />
+</div>
+
+<div>
+  <label for="num2">Enter second number:</label>
+  <input id="num2" type="number" [(ngModel)]="number2" />
+</div>
+
+<button *ngIf="!isDisabled()" (click)="handleLogin()">Enter</button>
+
+<h2>Student Details</h2>
+<table border="3" [width]="400">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+      <th>Age</th>
+      <th>Course</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let student of students">
+      <td>{{ student.id }}</td>
+      <td>{{ student.name }}</td>
+      <td>{{ student.age }}</td>
+      <td>{{ student.course }}</td>
+    </tr>
+  </tbody>
+</table>
+
+
+<div>
+    <label for="studentId">Enter Student ID to search:</label>
+    <input id="studentId" type="number" [(ngModel)]="enteredId" />
+    <button (click)="getStudentById()">Get Student Details</button>
+  </div>
+  
+  <!-- Display student details if found -->
+  <div *ngIf="studentDetails">
+    <h3>Student Details:</h3>
+    <p><strong>ID:</strong> {{ studentDetails.id }}</p>
+    <p><strong>Name:</strong> {{ studentDetails.name }}</p>
+    <p><strong>Age:</strong> {{ studentDetails.age }}</p>
+    <p><strong>Course:</strong> {{ studentDetails.course }}</p>
+  </div>
+
+
+ 

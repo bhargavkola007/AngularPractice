@@ -1,0 +1,27 @@
+<div class="calculator">
+    <input type="text" [(ngModel)]="displayValue" readonly>
+    <input type="button" value="7" (click)="addToDisplay('7')">
+    <input type="button" value="8" (click)="addToDisplay('8')">
+    <input type="button" value="9" (click)="addToDisplay('9')">
+    <input type="button" value="/" (click)="addToDisplay('/')">
+    <br>
+    <input type="button" value="4" (click)="addToDisplay('4')">
+    <input type="button" value="5" (click)="addToDisplay('5')">
+    <input type="button" value="6" (click)="addToDisplay('6')">
+    <input type="button" value="*" (click)="addToDisplay('*')">
+    <br>
+    <input type="button" value="1" (click)="addToDisplay('1')">
+    <input type="button" value="2" (click)="addToDisplay('2')">
+    <input type="button" value="3" (click)="addToDisplay('3')">
+    <input type="button" value="-" (click)="addToDisplay('-')">
+    <br>
+    <input type="button" value="0" (click)="addToDisplay('0')">
+    <input type="button" value="." (click)="addToDisplay('.')">
+    <input type="button" value="=" (click)="calculate()">
+    <input type="button" value="+" (click)="addToDisplay('+')">
+    <br>
+    <div class="align">
+        <input type="button" value="C" (click)="clearDisplay()">
+        <h3>Simple Calculator</h3>
+    </div>
+</div>

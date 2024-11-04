@@ -1,0 +1,18 @@
+<div class="home-container">
+    <h1>Welcome to Our Website!</h1>
+    <p>Explore our site to learn more about what we do and how we can help you.</p>
+    <p>We're here to provide you with amazing content and services.</p>
+    <button (click)="navigateToAbout()">Learn More About Us</button>
+    <button (click)="navigateToservice()">Go to Service</button>
+  </div>
+  <!-- Using ts file -->
+  <!-- <div>
+  <button (click)="navigatetologin()">Go to Login</button>
+    <button (click)="navigatetoregister()">Go to Register</button>
+  </div> -->
+  <!-- Using Html -->
+  <div>
+    <button class="btn btn-primary mt-3" [routerLink]="'/login'">Go to Login</button>
+      <button class="btn btn-primary mt-3" [routerLink]="'/register'">Go to Register</button>
+    </div>
+    

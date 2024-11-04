@@ -1,0 +1,82 @@
+/* General styles for the component */
+h1 {
+    text-align: center;
+    color: #4a4a4a;
+    margin-bottom: 20px;
+  }
+  
+  /* Card styling */
+  .card {
+    max-width: 400px; /* Set a max width for the card */
+    margin: 20px auto; /* Center the card horizontally */
+    padding: 20px; /* Add padding inside the card */
+    border: 1px solid #ccc; /* Light border for the card */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    background-color: #fff; /* White background for the card */
+  }
+  
+  /* Styles for paragraphs */
+  p {
+    font-size: 18px;
+    color: #555;
+    text-align: center; /* Center text for the card */
+  }
+  
+  /* Styles for the GitHub link */
+  a {
+    display: block;
+    text-align: center;
+    margin: 15px 0;
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Styles for the input fields */
+  input {
+    display: block;
+    width: 100%; /* Full width of the card */
+    margin: 10px 0; /* Vertical margin */
+    padding: 10px; /* Padding inside the input */
+    font-size: 16px;
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 5px; /* Rounded corners */
+    transition: border-color 0.3s; /* Transition for border color */
+  }
+  
+  input:focus {
+    border-color: #007bff; /* Change border color on focus */
+    outline: none; /* Remove default outline */
+  }
+  
+  /* Styles for the button */
+  button {
+    display: block;
+    width: 100%; /* Full width of the card */
+    margin: 20px 0; /* Vertical margin */
+    padding: 10px; /* Padding inside the button */
+    font-size: 16px;
+    color: white; /* Text color */
+    background-color: #28a745; /* Button background color */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Transition for background color */
+  }
+  
+  button:hover {
+    background-color: #218838; /* Darker green on hover */
+  }
+  
+  /* Styles for the message display */
+  .message {
+    text-align: center;
+    font-size: 18px;
+    color: #28a745; /* Same color as button for consistency */
+  }
+  

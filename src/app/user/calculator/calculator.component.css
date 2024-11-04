@@ -1,0 +1,83 @@
+/* Body Styling with Gradient Background */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to left, #ff0000, #ffff00, #00ff00, #00ffff, #0000ff, #ff00ff, #ff0000);
+    background-size: 1000% auto;
+    animation: gradientChange 10s infinite;
+    margin: 0;
+    padding: 0;
+}
+
+/* Gradient Animation */
+@keyframes gradientChange {
+    0% { background-position: 0 25%; }
+    25% { background-position: 25% 50%; }
+    50% { background-position: 50% 75%; }
+    75% { background-position: 75% 100%; }
+    100% { background-position: 100% 0%; }
+}
+
+/* Calculator Container Styling */
+.calculator {
+    width: 300px;
+    margin: 100px auto;
+    background: #a583e8;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Align Elements */
+.align {
+    display: inline-flex;
+    align-items: center;
+}
+
+/* Heading Styling */
+h3 {
+    margin-left: 20px;
+    color: #ffff00; /* Fix the color for h3 */
+}
+
+/* Button Styling */
+input[type="button"] {
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    font-size: 20px;
+    color: blue;
+    background-color: aqua;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* Button Hover Effect */
+input[type="button"]:hover {
+    color: white;
+    font-weight: bold;
+    background: linear-gradient(to right, #00ff00, #ffea00, #ff00ff, #ff0000);
+    background-size: 1000% auto;
+    animation: gradientChange 2s ease-in-out infinite;
+    transform: scale(1.05);
+    box-shadow: 0px 0px 10px white;
+}
+
+/* Display Input Field */
+input[type="text"] {
+    width: 100%; /* Adjust width for full alignment */
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 20px;
+    background-color: rgb(246, 245, 244);
+    border: none;
+    border-radius: 25px;
+    box-sizing: border-box;
+}
+
+/* Display Container */
+.display {
+    border-radius: 25px;
+    box-sizing: border-box;
+}

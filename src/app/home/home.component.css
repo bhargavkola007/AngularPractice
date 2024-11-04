@@ -1,0 +1,79 @@
+/* General Styling */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f9;
+  margin: 0;
+  padding: 0;
+}
+
+/* Container for home page */
+.home-container {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  margin: 40px auto;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+button:last-child{
+  margin-left: 50px;
+}
+button:hover {
+  background-color: #0056b3;
+  
+}
+
+/* Additional styling for buttons using routerLink */
+button.btn-primary {
+  background-color: #28a745;
+  margin: 10px;
+  justify-content: center;
+  align-items: center;
+  margin-left: 400px;
+}
+
+button.btn-primary:hover {
+  background-color: #218838;
+}
+
+@media (max-width: 768px) {
+  .home-container {
+    padding: 40px 10px;
+    margin: 20px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  button {
+    width: 100%;
+    margin-top: 10px;
+  }
+}
